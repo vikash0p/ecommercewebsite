@@ -45,9 +45,10 @@ if(isError) return <h1>Show error{isError} </h1>
         </div>
 
         <div className="row">
+          
 
         {
-                    filter && filter.map((product)=>{
+                   filter && filter.map((product)=>{
                         return(
                             <div className="col-10 col-md-3 mt-5 mb-2 m-auto"  key={product.id}>
                               
@@ -55,7 +56,7 @@ if(isError) return <h1>Show error{isError} </h1>
                               <img src={product.image} className="card-img-top" alt={product.title}  height={'300px'} />
                               <div className="card-body">
                                 <h5 className="card-title">{product.title.substring(0,12)}</h5>
-                                <h5 > <span>&#8377;</span> {product.price} </h5>
+                                 <h5 > <span>&#8377;</span> {product.price} </h5>
                                 <NavLink  to={`/product/${product.id}`} className='btn px-5'  style={{background:theme?"#ffc107":"gray",color:theme?"black":"white"}}>Show</NavLink>
                                   
                               </div>
@@ -64,6 +65,7 @@ if(isError) return <h1>Show error{isError} </h1>
                         )
                     })
                 }
+                
         </div>
        </div>
     </>
