@@ -1,0 +1,11 @@
+section{
+    width: 100hv;
+    height: 350px;
+    background: url(../images/girl.jpg);
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+}
+body{
+    box-sizing: border-box;
+}
